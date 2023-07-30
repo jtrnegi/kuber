@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: preapp-container
-        image: 671067278541.dkr.ecr.eu-west-1.amazonaws.com/dockerapp :0.3
+        image: 671067278541.dkr.ecr.eu-west-1.amazonaws.com/dockerapp:0.3
         ports:
           - containerPort: 80
