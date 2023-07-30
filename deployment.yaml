@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment
+  app: preapp
+spec:
+  replica: 1
+  selector:
+    matchlabels:
+       app: preapp
+  template:
+    metadata:
+      app: preapp
+    spec:
+      containers:
+      - name: preapp-container
+        image: 671067278541.dkr.ecr.eu-west-1.amazonaws.com/dockerapp:imagetag
+        ports:
+          - containerPort: 80
